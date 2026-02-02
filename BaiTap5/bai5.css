@@ -1,0 +1,30 @@
+
+.header__right button{
+    color: #b7bfc8;
+    border:1px solid #b7bfc8;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}
+table,thead,tbody,td,th{
+    border: none
+}
+button{
+    cursor: pointer;
+}
+
+.formAddEmployee{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.formAddEmployee input{
+    border: 1px solid #ddd;
+}
+.formAddEmployee label{
+    color: rgb(99, 98, 98);
+}
+.formButton{
+    border-top: 2px solid #ddd;
+}

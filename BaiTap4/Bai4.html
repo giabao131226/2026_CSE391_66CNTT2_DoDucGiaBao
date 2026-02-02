@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/flex.css">
+    <link rel="stylesheet" href="../assets/position.css">
+    <link rel="stylesheet" href="../assets/bai4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-center">
+        <div class="container d-flex items-center flex-column">
+            <form class="container bg-white" action="#">
+                <header class="container__fluid text-align-start px-3">
+                    <div class="header__custom">
+                        <p class="font-bold m-0 py-2">Basic Info</p>
+                    </div>
+                </header>
+                <div class="col-12 d-flex items-center" style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Employee ID</label>
+                    <p class="col-8 m-0 text-align-start">9</p>
+                </div>
+                <div class="col-12 d-flex items-center py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Last Name</label>
+                    <p class="col-8 m-0 text-align-start">Dodsworth</p>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">First Name</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom relative"><i class="fa-solid fa-person"></i></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-1 text-align-start">Gender</label>
+
+                    <div class="genderList d-flex flex-column items-start">
+                        <div class="row">
+                            <input type="radio" name="gender">
+                            <label>Male</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="gender">
+                            <label>Female</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="gender">
+                            <label>XXX</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="gender">
+                            <label>ZZZ</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Title</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom"></input>
+                </div>
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Suffix</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom"></input>
+                </div>
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">BirthDate</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom" type="datetime-local"></input>
+                </div>
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Title</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom" type="datetime-local"></input>
+                </div>
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">SSN # (if applicable)</label>
+                    <input class="col-8 m-0 px-0 py-1 m-0 input__custom" type="text"></input>
+                </div>
+                <div class="col-12 d-flex items-center px-0 py-0"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Reports To</label>
+                    <select class="col-3">
+                        <option>Bunchana</option>
+                        <option>Hà Nội</option>
+                        <option>Việt Nam</option>
+                    </select>
+                </div>
+
+                <header class="container-fluid text-align-start px-3">
+                    <div class="header__custom">
+                        <p class="font-bold m-0 py-2">Contact Info</p>
+                    </div>
+                </header>
+
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">First Name</label>
+                    <input class="col-8 input__custom py-1" type="email" placeholder="name@example.com" name="email"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Address</label>
+                    <input class="col-8 input__custom py-1" type="text" name="address"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">City</label>
+                    <input class="col-8 input__custom py-1" type="text" name="city"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Region</label>
+                    <input class="col-8 input__custom py-1" type="text" name="city"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Postal Code</label>
+                    <input class="col-8 input__custom py-1" type="text" name="city"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Country</label>
+                    <select class="col-3">
+                        <option>
+                            Russian Federation
+                        </option>
+                        <option>
+                            Nam Định
+                        </option>
+                        <option>
+                            Thanh Hoá
+                        </option>
+                    </select>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">US Home Phone</label>
+                    <input class="col-8 input__custom py-1" type="text" name="city"></input>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Photo</label>
+                    <input class="col-8 input__custom py-1" type="text" name="city"></input>
+                </div>
+
+                <header class="container-fluid text-align-start px-3">
+                    <div class="header__custom">
+                        <p class="font-bold m-0 py-2">Optional Info</p>
+                    </div>
+                </header>
+                <div class="col-12 d-flex items-center" >
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Notes</label>
+                    <textarea class="col-8" style="height: 200px;"></textarea>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Preferred</label>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex items-center">
+                            <input type="checkbox">
+                            <label>Regular</label>
+                        </div>
+                        <div class="d-flex items-center">
+                            <input type="checkbox">
+                            <label>Gray Yard</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Active?</label>
+                    <input type="checkbox">
+                </div>
+                <div class="col-12 d-flex items-center"  style="padding-top: 0px;padding-bottom: 0px;">
+                    <label class="col-4 font-bold px-0 py-0 text-align-start">Are you human?</label>
+                    <p class="col-8 m-0">Click to change</p>
+                </div>
+                <div class="col-12 d-flex items-center" >
+                    <div class="col-4"></div>
+                    <button class="col-8 px-0 py-0" style="height: 30px;"></button>
+                </div>
+
+                <div class="container__fluid text-align-start px-3">
+                    <div class="formFoot d-flex items-center justify-between">
+                        <div class="d-flex items-center gap-x-2">
+                            <button class="text-white bg-black px-2 py-2"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="text-white bg-black px-2 py-2"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <div class="d-flex items-center gap-x-2">
+                            <button class="text-white bg-black font-bold px-3 py-2"><i class="fa-solid fa-floppy-disk"></i> Submit</button>
+                            <button class="text-white bg-black font-bold px-3 py-2">X Cancel</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

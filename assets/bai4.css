@@ -1,0 +1,17 @@
+
+.header__custom{
+    border-bottom: 2px solid black;
+}
+
+.formFoot{
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+.input__custom{
+    border: 1px solid black;
+    border-top: 2px solid black;
+}
+.fa-person{
+    position: absolute;
+    right: 130px;
+}
