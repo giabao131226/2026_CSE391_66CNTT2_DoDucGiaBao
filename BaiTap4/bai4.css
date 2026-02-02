@@ -1,4 +1,12 @@
 
+
+
+.basicInfo{
+    padding-top: 40px;
+}
+.contactInfo{
+    padding-top: 10px;
+}
 .header__custom{
     border-bottom: 2px solid black;
 }
