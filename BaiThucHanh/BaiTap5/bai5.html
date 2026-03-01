@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/flex.css">
+    <link rel="stylesheet" href="../assets/css/position.css">
+    <link rel="stylesheet" href="./bai5.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container__fluid bg-black d-flex justify-center py-2">
+        <div class="container">
+            <div class="d-flex items-center justify-between">
+                <div class="header__left d-flex gap-x-5 items-center">
+                    <h2 class="m-0 text-white">HR Management</h2>
+                    <ul class="list-style-type-none d-flex items-center gap-x-2 m-0 px-0">
+                        <li class="text-white font-14">Home</li>
+                        <li class="text-gray-200 font-14">Contact</li>
+                    </ul>
+                </div>
+                <div class="header__right d-flex items-center gap-x-2">
+                    <input type="text" placeholder="Search.." class="py-2 rounded px-2">
+                    <button class="py-2 px-2 rounded bg-black">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container__fluid d-flex justify-center">
+        <div class="container px-4">
+            <div class="d-flex items-center justify-between">
+                <h2 class="m-0 py-3">Employee</h2>
+                <button class="bg-blue border-none px-3 py-2 rounded" style="cursor: pointer;"><a class="text-decoration-none text-white" href="http://127.0.0.1:5500/NenTangPhatTrienWeb/FileCode/BaiThucHanh/BaiTap5/NewEmployee.html">+ Add</a></button>
+            </div>
+
+            <table class="bg-white container__fluid text-align-start">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-2 text-align-start">ID</th>
+                        <th class="text-align-start">Name</th>
+                        <th class="text-align-start">Email</th>
+                        <th class="text-align-start">Phone</th>
+                        <th class="text-align-start">Position</th>
+                        <th class="text-align-start">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-2 py-3">1</td>
+                        <td>Fatima Beatriz</td>
+                        <td>Fatima Beatriz@gmail.com</td>
+                        <td>0985674321</td>
+                        <td>Staff</td>
+                        <td>
+                            <button class="bg-orange border-none font-bold py-2 px-3 rounded">Edit</button>
+                            <button class="bg-red text-white border-none font-bold py-2 px-3 rounded">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-3">2</td>
+                        <td>Gabriel Hanna</td>
+                        <td>Gabriel Hanna@gmail.com</td>
+                        <td>0353674231</td>
+                        <td>Staff</td>
+                        <td>
+                            <button class="bg-orange border-none font-bold py-2 px-3 rounded">Edit</button>
+                            <button class="bg-red text-white border-none font-bold py-2 px-3 rounded">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-3">3</td>
+                        <td>Charles Diya</td>
+                        <td>Charles Diya@gmail.com</td>
+                        <td>0347658833</td>
+                        <td>Staff</td>
+                        <td>
+                            <button class="bg-orange border-none font-bold py-2 px-3 rounded">Edit</button>
+                            <button class="bg-red text-white border-none font-bold py-2 px-3 rounded">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-3">4</td>
+                        <td>Frank Lamdo</td>
+                        <td>Frank Lamdo@gmail.com</td>
+                        <td>0975444768</td>
+                        <td>Manager</td>
+                        <td>
+                            <button class="bg-orange border-none font-bold py-2 px-3 rounded">Edit</button>
+                            <button class="bg-red text-white border-none font-bold py-2 px-3 rounded">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-3">5</td>
+                        <td>Louis Tom</td>
+                        <td>Louis Tom@gmail.com</td>
+                        <td>0789568223</td>
+                        <td>Staff</td>
+                        <td>
+                            <button class="bg-orange border-none font-bold py-2 px-3 rounded">Edit</button>
+                            <button class="bg-red text-white border-none font-bold py-2 px-3 rounded">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
