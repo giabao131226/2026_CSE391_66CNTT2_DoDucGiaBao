@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="hien-thi">
+
+    </div>
+
+    <script>
+        async function layDuLieu(){
+            const duLieu = await fetch("https://dummyjson.com/products")
+            return duLieu;
+        }
+
+        layDuLieu()
+        .then(res => res.json())
+        .then(data => {
+            const duLieu = data.products[0]
+            console.log(duLieu)
+            const element = document.querySelector(".hien-thi")
+            element.innerHTML = `
+                <img src = '${duLieu.thumbnail}'>
+                <p>${duLieu.title}</p>
+            `
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    </script>
+
+</body>
+</html>
