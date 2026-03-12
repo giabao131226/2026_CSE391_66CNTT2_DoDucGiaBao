@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .d-none{
+            display: none;
+        }
+    </style>
+
+    <img src="https://upload.wikimedia.org/wikipedia/vi/a/a1/Man_Utd_FC_.svg" style="width: 100px;height: 100px;">
+
+    <p class="them">Element thêm class d-none</p>
+
+    <input type="radio" >
+
+    <p class="xoa d-none">Element xoá class d-none</p>
+
+
+    <span>Bật Tắt SPAN</span>
+    <button>Hiện/Ẩn Element</button>
+    <script>
+        const elementImg = document.querySelector("img")
+        elementImg.setAttribute("src","https://www.inlogo.vn/vnt_upload/File/Image/hinh_nen_clb_manchester_united_full_hd_13.jpg")
+
+        const pElement = document.querySelector(".them")
+        pElement.classList.add("d-none")
+        
+        const pElement2 = document.querySelector(".them")
+        pElement2.classList.remove("d-none")
+
+        const inputRadio = document.querySelector("input")
+        inputRadio.checked = true;
+
+        const button = document.querySelector("button")
+        button.addEventListener("click",() => {
+            console.log("đã click")
+            const span = document.querySelector("span")
+            span.classList.toggle("d-none")
+        })
+    </script>
+</body>
+</html>
