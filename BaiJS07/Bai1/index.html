@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="d-flex flex-column gap-y-3 items-start" id="formThemSV">
+        <div class="d-flex flex-column items-start">
+            <label class="d-block">
+                Họ Và Tên
+            </label>
+            <input type="text" name="hovaten">
+        </div>
+        <div class="d-flex flex-column items-start">
+            <label class="d-block">
+                Điểm
+            </label>
+            <input type="number" name="diem">
+        </div>
+        <button type="submit" class="cursor-pointer">
+            Thêm
+        </button>
+    </form>
+
+    <div id="parent" style="padding:40px; background:lightblue;">
+        Parent
+        <button id="child">Click Me</button>
+    </div>
+
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+        // Thêm click event listener cho một nút bấm.
+        const button = document.querySelector("button")
+        button.addEventListener("click", () => {
+            console.log("đã click")
+        })
+        // 
+        // Thêm keyboard event listener để nhận diện phím nhấn.
+        const listInput = document.querySelectorAll("input")
+        listInput.forEach((item) => {
+            item.addEventListener("keyup", () => {
+                console.log(item.value)
+            })
+        })
+        // 
+        // Xử lý sự kiện submit của form và ngăn load lại trang.
+        const form = document.querySelector("form")
+        form.addEventListener("submit", (e) => {
+            e.preventDefault
+        })
+        // Kiểm tra sự lan truyền sự kiện (bubbling) qua các thẻ lồng nhau.
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+
+        parent.addEventListener("click", function () {
+            console.log("Div cha được click");
+        });
+
+        child.addEventListener("click", function () {
+            console.log("Button con được click");
+        });
+        // 
+        // Triển khai event delegation cho một danh sách (UL/LI).
+        const ul = document.querySelector("#list");
+
+        ul.addEventListener("click", function (e) {
+            if (e.target.tagName === "LI") {
+                e.target.remove();
+            }
+        });
+        // 
+    </script>
+</body>
+
+</html>
