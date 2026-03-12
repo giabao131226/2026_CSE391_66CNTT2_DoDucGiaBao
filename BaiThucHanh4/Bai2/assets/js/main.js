@@ -120,6 +120,7 @@ function handleSubmit(e) {
     const thongBao = document.querySelector("#thongBaoDKThanhCong")
     thongBao.classList.remove("d-none")
     thongBao.innerHTML = `
+        <p>Đăng ký thành công! 🎉</p>
         <p>Tên Người Dùng: <span class = "font-bold">${inputName.value}</span></p>
         <p>Email: <span class = "font-bold">${inputEmail.value}</span></p>
         <p>Phone: <span class = "font-bold">${inputPhone.value}</span></p>
