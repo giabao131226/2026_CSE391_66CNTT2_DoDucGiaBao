@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .bg-blue{
+            background-color: blue;
+        }
+    </style>
+
+    <button>Bấm</button>
+    <p>Click là thay đổi content</p>
+
+    <script>
+        const buttonDocument = document.querySelector("button")
+        buttonDocument.addEventListener("click",() => {
+            buttonDocument.classList.toggle("bg-blue")
+        })
+
+        buttonDocument.addEventListener("mouseenter",() => {
+            console.log("mouse Enter")
+        })
+
+        buttonDocument.addEventListener("mouseleave",() => {
+            console.log("mouse leave")
+        })
+
+        const pElement = document.querySelector("p")
+        pElement.addEventListener("click",(e) => {
+            e.target.textContent = "Đã thay đổi nội dung"
+        })
+    </script>
+</body>
+</html>
