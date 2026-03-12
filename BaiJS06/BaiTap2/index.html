@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>textContent</h1>
+    <div></div>
+    <ul>
+        <li id = "abc">ABC</li>
+    </ul>
+
+    <script>
+        const h1 = document.querySelector("h1");
+        h1.textContent = 'ABC'
+
+        const divElement = document.querySelector("div")
+        divElement.innerHTML = '<p>Chèn innerHtml</p>'
+
+        const liNew = document.createElement("li")
+        liNew.textContent = "Li New"
+
+        const ulElement = document.querySelector("ul")
+        ulElement.append(liNew)
+
+        const liABC = document.querySelector("#abc")
+        liABC.remove()
+    </script>
+</body>
+</html>
