@@ -11,26 +11,35 @@
     <link rel = "stylesheet" href="./assets/css/bai22.css">
 </head>
 <body>
+    <style>
+        input{
+            outline: none;
+        }
+    </style>
+
     <form class="d-flex flex-column items-start">
         <label>Tên sản phẩm</label>
         <select name="tenSP">
             <option selected readonly>-- Chọn sản phẩm --</option>
-            <option value="ao">Áo Bomber</option>
-            <option value="quan">Quần Jean</option>
-            <option value="giay">Giày</option>
+            
         </select>
 
         <label>Số lượng</label>
         <input type="number" name="quantity">
 
         <label>Ngày giao hàng</label>
-        <input type="text" name="ngayGiaoHang">
+        <input type="date" name="ngayGiaoHang">
 
         <label>Địa chỉ giao</label>
         <input type="text" name="address">
 
         <label>Ghi chú</label>
-        <textarea></textarea>
+        <div class="d-flex items-center">
+            <span class="m-0" id = 'ghiChuLength'>0</span>
+            <span>/200</span>
+        </div>
+        
+        <textarea name="ghiChu"></textarea>
 
         <label>Phương thức thanh toán</label>
         <div class="d-flex items-center">
@@ -48,7 +57,14 @@
 
         <button type="submit">Gửi</button>
     </form>
+    <div class="d-flex items-center">
+        <span>Tổng tiền: </span>
+        <span id = 'totalprice'> 0</span>đ
+    </div>
 
+    <div class="d-flex flex-column" id='form-xac-nhan'>
+
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
