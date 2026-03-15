@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,21 @@
     <link rel="stylesheet" href=".././asset/css/position.css">
     <link rel="stylesheet" href="./assets/css/bai2.css">
 </head>
+
 <body>
-    
+    <style>
+        .border-yellow {
+            border: 2px solid yellow;
+        }
+
+        .border-green {
+            border: 2px solid green;
+        }
+    </style>
     <form class="d-flex flex-column items-start gap-y-2">
         <label>Họ Và Tên</label>
         <input type="text" name="hovaten">
-        
+
         <label>Email</label>
         <input type="email" name="email">
 
@@ -25,10 +34,19 @@
         <input type="text" name="phone">
 
         <label>Mật Khẩu</label>
-        <input type="password" name="password">
+        <div class="d-flex items-center">
+            <input type="password" name="password">
+            <button type="button" class="hienThiPassword" id="pass" tt = "hidden">Hiển Thị</button>
+        </div>
 
         <label>Xác Nhận Mật Khẩu</label>
-        <input type="password" name="xacNhanMatKhau">
+        <div class="d-flex items-center">
+            <div class="d-flex items-center">
+                <input type="password" name="xacNhanMatKhau">
+                <button type="button" class="hienThiPassword" id="confirm" tt="hidden">Hiển Thị</button>
+            </div>
+
+        </div>
 
         <p>Giới Tính</p>
         <div class="d-flex items-center">
@@ -46,11 +64,12 @@
         </div>
         <button type="submit">Gửi</button>
     </form>
-    <div class="d-flex flex-column" id = "thongBaoDKThanhCong">
-        
+    <div class="d-flex flex-column" id="thongBaoDKThanhCong">
+
     </div>
 
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
