@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/flex.css">
+    <link rel="stylesheet" href="../assets/css/position.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            padding: 40px;
+        }
+        .alert-error{
+            border: 2px solid red;
+        }
+    </style>
+
+    <p>Product Management</p>
+    <div class="container-fluid text-align-start bg-white">
+        <div class="container">
+            <div class="main">
+                <h2>Thêm/Sửa Sản Phẩm</h2>
+                <form class="col-12 px-0 py-0 d-flex flex-column items-start gap-y-4">
+                    <div class="d-flex items-center gap-x-2 col-12 px-0 py-0">
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Tên sản phẩm</label>
+                            <input type="text" name="productName" class="col-12 px-0 py-2">
+                        </div>
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Gía sản phẩm</label>
+                            <input type="price" name="productPrice" class="col-12 px-0 py-2">
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column col-12 px-0 py-0">
+                        <label>Mô tả sản phẩm</label>
+                        <textarea class="col-12 px-0 py-0" name="description"></textarea>
+                    </div>
+
+                    <div class="d-flex items-center gap-x-2 col-12 px-0 py-0">
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Danh mục</label>
+                            <select class="col-12 px-0 py-2" name="category">
+                                <option value="a">A</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Số lượng tồn kho</label>
+                            <input type="number" name="stock" class="col-12 px-0 py-2">
+                        </div>
+                    </div>
+
+                    <div class="d-flex items-center gap-x-2 col-12 px-0 py-0">
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Mật khẩu quản trị</label>
+                            <input type="password" name="password" class="col-12 px-0 py-2">
+                        </div>
+                        <div class="d-flex flex-column col-6 px-0 py-0">
+                            <label>Xác nhận mật khẩu</label>
+                            <input type="password" name="confirmpassword" class="col-12 px-0 py-2">
+                        </div>
+                    </div>
+
+                    <div class="d-flex items-center gap-x-3">
+                        <button type="submit"
+                            class="bg-blue text-white border-none px-2 py-3 rounded cursor-pointer">Cập Nhật</button>
+                        <button class="bg-gray px-2 py-3 text-white border-none rounded">Huỷ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/changeProductDetail.js"></script>
+</body>
+
+</html>

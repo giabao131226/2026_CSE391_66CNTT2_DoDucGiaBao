@@ -1,0 +1,8 @@
+
+.ContactList{
+    padding: 0px 40px;
+}
+.ContactItem{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px;
+}

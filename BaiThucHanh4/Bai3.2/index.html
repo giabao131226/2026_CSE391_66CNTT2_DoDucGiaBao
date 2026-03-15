@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../assets/css/flex.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/position.css">
+</head>
+
+<body>
+
+
+    <style>
+        form {
+            width: 50%;
+            overflow: hidden;
+            height: 25vh;
+        }
+
+        .tool {
+            width: 50%;
+        }
+
+        button.active {
+            background-color: green;
+            color: white;
+        }
+        .d-none{
+            display: none!important;
+        }
+    </style>
+
+    <div class="container-fluid text-algin-start">
+        <div class="container">
+            <div class="d-flex flex-column items-center">
+                <h1>Form Validate Nhiều Bước</h1>
+                <form class="d-flex flex-column">
+                    <div class="col-12 px-0 py-0 d-flex items-center flex-wrap relative">
+                        <div class="validate1 d-flex flex-column col-12 px-0 py-0" id = "form1">
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Họ và Tên</label>
+                                <input type="text" name="hovaten">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Ngày Sinh</label>
+                                <input type="date" name="ngaySinh">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Giới Tính</label>
+                                <select name="sex">
+                                    <option value="nam" selected>Nam</option>
+                                    <option value="nu">Nữ</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="validate2 d-flex flex-column col-12 px-0 py-0 d-none" id = "form2">
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Email</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Mật Khẩu</label>
+                                <input type="password" name="password">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="d-block">Xác Nhận Mật Khẩu</label>
+                                <input type="password" name="confirmpassword">
+                            </div>
+
+                        </div>
+
+                        <div class="validate3 d-flex col-12 px-0 py-0 d-none" id = "form3">
+                            
+                        </div>
+                        
+                    </div>
+                </form>
+                <div class="tool d-flex items-center justify-between">
+                    <button id="previousStep">Quay Lại</button>
+                    <div class="d-flex items-center gap-x-3">
+                        <button class="active px-2 py-2 cursor-pointer" step="1">1</button>
+                        <button class="px-2 py-2 cursor-pointer" step="2">2</button>
+                        <button class="px-2 py-2 cursor-pointer" step="3">3</button>
+                    </div>
+                    <button id="nextStep">Tiếp Theo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>

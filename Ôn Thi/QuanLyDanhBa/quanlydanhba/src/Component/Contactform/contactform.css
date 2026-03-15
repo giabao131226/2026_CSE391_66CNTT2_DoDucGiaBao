@@ -1,0 +1,8 @@
+
+
+.ContactForm form{
+    padding: 10px 10px;
+}
+.alert-error{
+    border: 2px solid red;
+}

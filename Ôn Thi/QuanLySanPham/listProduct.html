@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/flex.css">
+    <link rel="stylesheet" href="../assets/css/position.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <style>
+        .listProduct{
+            padding: 50px;
+        }
+        .header{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .product{
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+    <div class="header d-flex items-center justify-between">
+        <p>Product Management</p>
+        <div class="d-flex items-center gap-x-3">
+            <button class="border-none px-3 py-2 rounded">Filter</button>
+            <a class="bg-blue border-none text-white px-3 py-2 rounded text-decoration-none" href="http://127.0.0.1:5500/NenTangPhatTrienWeb/FileCode/%C3%94n%20Thi/QuanLySanPham/index.html">+ Add product</a>
+        </div>
+    </div>
+    <div class="container-fluid text-align-start bg-white bg-white">
+        <div class="container">
+            <div class="d-flex flex-column listProduct">
+                <div class="product d-flex items-center justify-between">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-column gap-y-1">
+                            <p class="m-0 font-bold font-20">Apple iMac 27</p>
+                            <p class="m-0 text-gray-600">PC/Desktop PC</p>
+                        </div>
+                        <div class="d-flex items-center gap-x-1 py-2">
+                            <p class="text-red m-0">
+                                Price: <span class="priceProduct">$2999</span>
+                            </p>
+                            <span>|</span>
+                            <p class="m-0">
+                                Stock: <span class="stock">300</span>
+                            </p>
+                            <span>|</span>
+                            <p class="text-blue-400 m-0">
+                                Total Sales: <span class=totalSale">466</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex items-center gap-x-2">
+                        <button class="bg-orange px-2 py-2 border-none rounded cursor-pointer">Sửa</button>
+                        <button class="bg-red border-none text-white px-2 py-2 rounded cursor-pointer">Xoá</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/listProduct.js"></script>
+</body>
+
+</html>
